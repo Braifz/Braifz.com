@@ -29,7 +29,7 @@ function App() {
           Bienvenido a mi pagina Web! 
         </Heading>
         <Heading as="h2" size="2xl" textAlign="center" color="#fafafa">
-          Soy Braifz :)
+          Soy Braifz 😃
         </Heading>
         <Image
         boxSize="150px"
