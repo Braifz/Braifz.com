@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Flex, Heading, Image, Box} from '@chakra-ui/react';
+
+import Picture from '../src/img/me.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Box display="flex"
+    flexDir="column"
+    justifyContent="center" alignItems="center"
+    h="900px"
+    bg="#718096">
+      <Flex
+      bg="#2A4365"
+      w="40%"
+      h="400px"
+      p="1rem"
+      flexDir="column"
+      justify="center"
+      alignItems="center"
+      border="1px solid #2D3748"
+      boxShadow="5px 10px 18px #171923"
+      borderRadius="8px">
+        <Heading as="h1" size="4xl" textAlign="center" color="#fafafa">
+          Hola!
+        </Heading>
+        <Heading as="h2" size="2xl" textAlign="center" color="#fafafa" borderBottom="1px solid #fafafa">
+          Bienvenido a mi pagina Web! 
+        </Heading>
+        <Heading as="h2" size="2xl" textAlign="center" color="#fafafa">
+          Soy Braifz :)
+        </Heading>
+        <Image
+        boxSize="150px"
+        objectFit="cover"
+        src={Picture}
+        borderRadius="20px"
+        alt="braifz"
+        />
+
+      </Flex>
+    </Box>
   );
 }
 
