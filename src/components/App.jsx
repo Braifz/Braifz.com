@@ -1,7 +1,7 @@
 import React from 'react';
 import {Flex, Heading, Image, Box} from '@chakra-ui/react';
-
-import Picture from '../src/img/me.jpg';
+import Footer from './Footer'
+import Picture from '../img/me.jpg';
 
 function App() {
   return (
@@ -9,8 +9,9 @@ function App() {
     <Box display="flex"
     flexDir="column"
     justifyContent="center" alignItems="center"
-    h="900px"
-    bg="#718096">
+    minH="870px"
+    bg="#718096"
+    >
       <Flex
       bg="#2A4365"
       w="40%"
