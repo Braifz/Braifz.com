@@ -1,6 +1,5 @@
 import React from 'react';
 import {Flex, Heading, Image, Box} from '@chakra-ui/react';
-import Footer from './Footer'
 import Picture from '../img/me.jpg';
 
 function App() {
