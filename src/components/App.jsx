@@ -14,7 +14,7 @@ function App() {
       <Flex
       bg="#2A4365"
       w="40%"
-      h="400px"
+      h="500px"
       p="1rem"
       flexDir="column"
       justify="center"
@@ -26,10 +26,13 @@ function App() {
           Hola!
         </Heading>
         <Heading as="h2" size="2xl" textAlign="center" color="#fafafa" borderBottom="1px solid #fafafa">
-          Bienvenido a mi pagina Web! 
+          Bienvenido a mi pagina Web! (en construcción)
         </Heading>
         <Heading as="h2" size="2xl" textAlign="center" color="#fafafa">
-          Soy Braifz 😃
+          Mi nombre es Braian Fernandez 😃
+        </Heading>
+        <Heading as="h2" size="2xl" textAlign="center" color="#fafafa">
+          Soy desarrollador Front-End Jr.
         </Heading>
         <Image
         boxSize="150px"
