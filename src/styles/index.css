@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Satisfy", cursive;
+  font-family: "Molengo", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,7 +22,7 @@ body {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(
     -60deg,
-    rgb(26, 27, 25) 50%,
+    rgb(201, 202, 199) 50%,
     rgb(233, 239, 243) 50%
   );
   bottom: 0;
@@ -44,14 +44,7 @@ body {
 }
 
 .content {
-  border-radius: 0.25em;
-  box-sizing: border-box;
-  left: 50%;
-  padding: 10vmin;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  font-family: "Truculenta", sans-serif;
 }
 
 @keyframes slide {
