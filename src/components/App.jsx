@@ -6,6 +6,11 @@ import '../styles/index.css'
 import githubicon from '../img/github.png';
 import linkedinicon from '../img/linkedin.png';
 function App() {
+  const [ Lenguage , setLenguage ] = useState(true);
+
+  const English = {
+
+  }
 
   return (
     <Box>
@@ -29,7 +34,7 @@ function App() {
         </GridItem>
         <GridItem  colStart={2} rowStart={2} colSpan={3}  display='flex' alignItems='center' >
           <Text fontSize='25px' p='15px' boxShadow="5px 10px 18px #171923" borderRadius='25px'>    Soy  Braian, Desarrollador Web Front-end Jr <br/>     Vivo en Buenos Aires, Argentina <br/>
-          Me Gustan los gatitos, tomar café y hacer acrobacias <br/>   
+          Me gustan los gatitos, tomar café y hacer acrobacias <br/>   
           Las tecnologias que utilizo son Html, Css, Javascript, React, Chakra UI y Git
 
           </Text>
