@@ -6,27 +6,36 @@ import '../styles/index.css'
 import githubicon from '../img/github.png';
 import linkedinicon from '../img/linkedin.png';
 function App() {
-  const [ Lenguage , setLenguage ] = useState(true);
+  
+  const Spanish = {
+    greeting: '¡Hola!',
+    aboutme: 'Soy  Braian, Desarrollador Web Front-end Jr',
+    ilive: 'Vivo en Buenos Aires, Argentina',
+    ilike: 'Me gustan los gatitos, tomar café y hacer acrobacias',
+    techs: 'Las tecnologias que utilizo son Html, Css, Javascript, React, Chakra UI y Git',
+    button: '🇺🇸'
+  }
+  
+  const English = {
+    greeting: 'Hi!',
+    aboutme: 'Im Braian, Front-End dev Jr.',
+    ilive: 'I live in Buenos Aires, Argentina',
+    ilike: 'I like the cats, drink coffee and doing acrobatics',
+    techs: 'Techs what i use are Html, Css , Javascript , React, Chakra UI and Git ',
+    button: '🇦🇷 '
+  }
+  const [ Lenguage , setLenguage ] = useState(false);
 
   const changeLanguage = () => {
     setLenguage(!Lenguage)
     console.log(Lenguage)
   }
 
-  const Spanish = {
-    greeting: '¡Hola!',
-    aboutme: 'Soy  Braian, Desarrollador Web Front-end Jr',
-    ilive: 'Vivo en Buenos Aires, Argentina',
-    ilike: 'Me gustan los gatitos, tomar café y hacer acrobacias',
-    techs: 'Las tecnologias que utilizo son Html, Css, Javascript, React, Chakra UI y Git'
-  }
-
-  const English = {
-    greeting: 'Hi!',
-    aboutme: 'Im Braian, Front-End dev Jr.',
-    ilive: 'I live in Buenos Aires, Argentina',
-    ilike: 'I like the cats, drink coffee and doing acrobatics',
-    techs: 'Techs what i use are Html, Css , Javascript , React, Chakra UI and Git '
+  let LenguageText ;
+  if (Lenguage === true) {
+    LenguageText = Spanish
+  } else {
+    LenguageText = English
   }
 
   
@@ -69,9 +78,9 @@ function App() {
             boxShadow="5px 10px 18px #171923" 
             borderRadius='10px'
           >
-            
-              Hi!
-      
+              {
+                LenguageText.greeting
+              }
           </Heading>
         </GridItem>
         <GridItem  
@@ -87,10 +96,10 @@ function App() {
             boxShadow="5px 10px 18px #171923" 
             borderRadius='25px'
           >    
-            Soy  Braian, Desarrollador Web Front-end Jr <br/>     
-            Vivo en Buenos Aires, Argentina <br/>
-            Me gustan los gatitos, tomar café y hacer acrobacias <br/>   
-            Las tecnologias que utilizo son Html, Css, Javascript, React, Chakra UI y Git
+            {LenguageText.aboutme} <br/>     
+            {LenguageText.ilive}<br/>
+            {LenguageText.ilike} <br/>   
+            {LenguageText.techs}
 
           </Text>
         </GridItem>
@@ -101,15 +110,43 @@ function App() {
           alignItems='center' 
           justifyContent='center'
         >
-          <Link href="https://github.com/Braifz">
-            <Image src={githubicon} boxSize='40px' m='40px'/>
+          <Link 
+            href="https://github.com/Braifz"
+          >
+            <Image 
+              src={githubicon} 
+              boxSize='40px' 
+              m='40px'
+            />
           </Link>
-          <Link href="https://www.linkedin.com/in/braian-fernandez-ba90291a8/">
-            <Image src={linkedinicon}  boxSize='40px' m='40px'/>
+          <Link 
+            href="https://www.linkedin.com/in/braian-fernandez-ba90291a8/"
+          >
+            <Image 
+              src={linkedinicon}  
+              boxSize='40px' 
+              m='40px'
+            />
           </Link> 
         </GridItem>
-        <GridItem>
-          <Button onClick={changeLanguage}>Lenguage</Button>
+        <GridItem 
+          colStart={3}
+          rowStart={1}
+          display='flex'
+          alignItems='center'
+          justifyContent='center'
+
+        >
+          <Button 
+          onClick={changeLanguage} 
+          borderRadius='100%'
+          variant='ghost'
+          border='none'
+          cursor='pointer'
+          _hover= {{boxShadow: "5px 10px 18px #171923" }}
+          >
+            {LenguageText.button}
+          </Button>
         </GridItem>
       </Grid>  
   </Box>
