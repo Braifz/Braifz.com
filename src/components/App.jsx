@@ -5,6 +5,9 @@ import '../styles/index.css'
 
 import githubicon from '../img/github.png';
 import linkedinicon from '../img/linkedin.png';
+import Argentinaicon from '../img/argentina.png';
+import eeuuicon from '../img/united-states.png';
+
 function App() {
   
   const Spanish = {
@@ -13,7 +16,7 @@ function App() {
     ilive: 'Vivo en Buenos Aires, Argentina',
     ilike: 'Me gustan los gatitos, tomar café y hacer acrobacias',
     techs: 'Las tecnologias que utilizo son Html, Css, Javascript, React, Chakra UI y Git',
-    button: '🇺🇸'
+    button: eeuuicon,
   }
   
   const English = {
@@ -21,8 +24,8 @@ function App() {
     aboutme: 'Im Braian, Front-End dev Jr.',
     ilive: 'I live in Buenos Aires, Argentina',
     ilike: 'I like the cats, drink coffee and doing acrobatics',
-    techs: 'Techs what i use are Html, Css , Javascript , React, Chakra UI and Git ',
-    button: '🇦🇷 '
+    techs: 'The techs i use are Html, Css , Javascript , React, Chakra UI and Git ',
+    button: Argentinaicon,
   }
   const [ Lenguage , setLenguage ] = useState(false);
 
@@ -115,8 +118,11 @@ function App() {
           >
             <Image 
               src={githubicon} 
-              boxSize='40px' 
+              boxSize='40px'
+              borderRadius='100%' 
               m='40px'
+              _hover= {{boxShadow:"5px 10px 18px #171923" }}
+              transition='0.5s'
             />
           </Link>
           <Link 
@@ -126,6 +132,9 @@ function App() {
               src={linkedinicon}  
               boxSize='40px' 
               m='40px'
+              _hover= {{boxShadow:"5px 10px 18px #171923" }}
+              borderRadius='100%'
+              transition='0.5s'
             />
           </Link> 
         </GridItem>
@@ -144,8 +153,9 @@ function App() {
           border='none'
           cursor='pointer'
           _hover= {{boxShadow: "5px 10px 18px #171923" }}
+          transition='0.5s'
           >
-            {LenguageText.button}
+            <Image src={LenguageText.button} alt='imgbutton' boxSize='50px'borderRadius='100%'/>
           </Button>
         </GridItem>
       </Grid>  
