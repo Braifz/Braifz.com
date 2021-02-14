@@ -69,9 +69,9 @@ function App() {
             boxShadow="5px 10px 18px #171923" 
             borderRadius='10px'
           >
-            {  
-              
-            }
+            
+              Hi!
+      
           </Heading>
         </GridItem>
         <GridItem  
