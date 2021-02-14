@@ -25,7 +25,7 @@ function App() {
         </GridItem>
         <GridItem  colStart={2} rowStart={2} colSpan={3}  display='flex' alignItems='center' >
           <Text fontSize='25px' p='15px' boxShadow="5px 10px 18px #171923" borderRadius='25px'>    Soy  Braian, Desarrollador Web Front-end Jr <br/>     Vivo en Buenos Aires, Argentina <br/>
-          Me encanta el café, los gatitos y hacer acrobacias <br/>   
+          Me Gustan los gatitos, tomar café y hacer acrobacias <br/>   
           Las tecnologias que utilizo son Html, Css, Javascript, React, Chakra UI y Git <br/>
           
 
