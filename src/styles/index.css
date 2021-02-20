@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: "Molengo", cursive;
+  font-family: 'Molengo', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .content {
-  font-family: "Truculenta", sans-serif;
+  font-family: 'Truculenta', sans-serif;
 }
 
 @keyframes slide {
