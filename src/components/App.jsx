@@ -1,48 +1,150 @@
-import React from 'react';
-import {Flex, Heading, Image, Box} from '@chakra-ui/react';
-import Picture from '../img/me.jpg';
+import React, { useState } from 'react';
+import {
+  Grid,
+  GridItem,
+  Heading,
+  Image,
+  Box,
+  Text,
+  Link,
+  Button,
+} from '@chakra-ui/react';
+import PictureMe from '../img/_6101159-2.jpg';
+import '../styles/index.css';
+import { languageData } from '../Data/Data';
+import githubicon from '../img/github.png';
+import linkedinicon from '../img/linkedin.png';
 
 function App() {
-  return (
-    
-    <Box display="flex"
-    flexDir="column"
-    justifyContent="center" alignItems="center"
-    minH="870px"
-    bg="#718096"
-    >
-      <Flex
-      bg="#2A4365"
-      w="40%"
-      h="500px"
-      p="1rem"
-      flexDir="column"
-      justify="center"
-      alignItems="center"
-      border="1px solid #2D3748"
-      boxShadow="5px 10px 18px #171923"
-      borderRadius="8px">
-        <Heading as="h1" size="4xl" textAlign="center" color="#fafafa">
-          Hola!
-        </Heading>
-        <Heading as="h2" size="2xl" textAlign="center" color="#fafafa" borderBottom="1px solid #fafafa">
-          Bienvenido a mi pagina Web! (en construcción)
-        </Heading>
-        <Heading as="h2" size="2xl" textAlign="center" color="#fafafa">
-          Mi nombre es Braian Fernandez 😃
-        </Heading>
-        <Heading as="h2" size="2xl" textAlign="center" color="#fafafa">
-          Soy desarrollador Front-End Jr.
-        </Heading>
-        <Image
-        boxSize="150px"
-        objectFit="cover"
-        src={Picture}
-        borderRadius="20px"
-        alt="braifz"
-        />
+  const [Language, setLenguage] = useState(false);
 
-      </Flex>
+  const changeLanguage = () => {
+    setLenguage(!Language);
+    console.log(Language);
+  };
+
+  let languageText;
+  if (Language === true) {
+    languageText = languageData.Spanish;
+  } else {
+    languageText = languageData.English;
+  }
+  return (
+    <Box>
+      <div className='bg'></div>
+      <div className='bg bg2'></div>
+      <div className='bg bg3'></div>
+      <Grid
+        templateColumns='repeat(3, 1fr)'
+        templateRows='300px 300px 200px'
+        gap={3}
+      >
+        <GridItem
+          colStart={1}
+          rowStart={2}
+          display='flex'
+          alignContent='center'
+          justifyContent='center'
+        >
+          <Image
+            src={PictureMe}
+            alt='braifz'
+            borderRadius='100%'
+            boxSize='300px'
+            boxShadow='5px 10px 18px #171923'
+          />
+        </GridItem>
+        <GridItem
+          colStart={2}
+          rowStart={1}
+          display='flex'
+          alignItems='flex-end'
+          justifyContent='center'
+        >
+          <Heading
+            fontSize='70px'
+            m='0'
+            p='10px'
+            boxShadow='5px 10px 18px #171923'
+            borderRadius='10px'
+          >
+            {languageText.greeting}
+          </Heading>
+        </GridItem>
+        <GridItem
+          colStart={2}
+          rowStart={2}
+          colSpan={3}
+          display='flex'
+          alignItems='center'
+        >
+          <Text
+            fontSize='25px'
+            p='15px'
+            boxShadow='5px 10px 18px #171923'
+            borderRadius='25px'
+          >
+            {languageText.aboutme} <br />
+            {languageText.ilive}
+            <br />
+            {languageText.ilike} <br />
+            {languageText.techs}
+          </Text>
+        </GridItem>
+        <GridItem
+          colStart={2}
+          rowStart={3}
+          display='flex'
+          alignItems='center'
+          justifyContent='center'
+        >
+          <Link href='https://github.com/Braifz'>
+            <Image
+              src={githubicon}
+              boxSize='40px'
+              borderRadius='100%'
+              m='40px'
+              _hover={{ boxShadow: '5px 10px 18px #171923' }}
+              transition='0.5s'
+            />
+          </Link>
+          <Link href='https://www.linkedin.com/in/braian-fernandez-ba90291a8/'>
+            <Image
+              src={linkedinicon}
+              boxSize='40px'
+              m='40px'
+              _hover={{ boxShadow: '5px 10px 18px #171923' }}
+              borderRadius='100%'
+              transition='0.5s'
+            />
+          </Link>
+        </GridItem>
+        <GridItem
+          colStart={3}
+          rowStart={1}
+          display='flex'
+          alignItems='center'
+          justifyContent='center'
+        >
+          <Text fontSize='15px'>Español/English</Text>
+          <Button
+            onClick={changeLanguage}
+            borderRadius='100%'
+            variant='ghost'
+            border='none'
+            cursor='pointer'
+            _hover={{ boxShadow: '5px 10px 18px #171923' }}
+            transition='0.5s'
+          >
+            <Image
+              src={languageText.button}
+              alt='imgbutton'
+              boxSize='50px'
+              borderRadius='100%'
+            />
+          </Button>
+        </GridItem>
+      </Grid>
     </Box>
   );
 }
