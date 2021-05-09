@@ -1,20 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PictureMe from '../img/fotomia_comprimida.jpg';
 import '../styles/index.css';
 
 import githubicon from '../img/github.png';
 import linkedinicon from '../img/linkedin.png';
 function App() {
-  const Spanish = {
-    greeting: '¡Hola!',
-    aboutme: 'Soy  Braian, Desarrollador Web Front-end Jr',
-    ilive: 'Vivo en Buenos Aires, Argentina',
-    ilike: 'Me gustan los gatitos, tomar café y hacer acrobacias',
-    techs:
-      'Las tecnologias que utilizo son Html, Css, Javascript, React, Chakra UI y Git',
-    button: '🇺🇸',
-  };
-
   const English = {
     greeting: ' Welcome! :D',
     aboutme: 'Im Braian, Front-End dev Jr.',
@@ -23,19 +13,6 @@ function App() {
     techs: 'Techs what i use are Html, Css , Javascript , React and Git ',
     button: '🇦🇷 ',
   };
-  const [Lenguage, setLenguage] = useState(false);
-
-  const changeLanguage = () => {
-    setLenguage(!Lenguage);
-    console.log(Lenguage);
-  };
-
-  let LenguageText;
-  if (Lenguage === true) {
-    LenguageText = Spanish;
-  } else {
-    LenguageText = English;
-  }
 
   return (
     <main className='container'>
