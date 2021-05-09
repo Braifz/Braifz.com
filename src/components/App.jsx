@@ -54,12 +54,12 @@ function App() {
       </div>
       <div className="buttom-links">
         <div className="github-icon">
-          <a href="#">
+          <a href="https://github.com/Braifz">
             <img src={githubicon} alt="github" />
           </a>
         </div>
         <div className="linkedin-icon">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/braian-fernandez-ba90291a8/">
             <img src={linkedinicon} alt="linkedin" />
           </a>
         </div>
