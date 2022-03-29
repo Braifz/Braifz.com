@@ -1,0 +1,16 @@
+.header-container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(1, 14, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 14, 1, 1) 0%,
+    rgb(12, 56, 2) 50%,
+    rgba(1, 14, 1, 1) 100%
+  );
+  color: rgb(201, 199, 197);
+  font-size: 2rem;
+}
