@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from './Header';
+import Header from './Header/Header';
+import Footer from './Footer/Footer'
 
 import PictureMe from '../assets/img/melessmb.jpg';
 import '../styles/index.css';
@@ -45,7 +46,8 @@ function App() {
           </div>
         </div>
       </main>
-    </>
+      <Footer/>
+      </>
   );
 }
 
