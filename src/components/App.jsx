@@ -1,47 +1,51 @@
 import React from 'react';
-import {Flex, Heading, Image, Box} from '@chakra-ui/react';
-import Footer from './Footer'
-import Picture from '../img/me.jpg';
+import Header from './Header';
 
+import PictureMe from '../assets/img/melessmb.jpg';
+import '../styles/index.css';
+import githubicon from '../assets/img/github.png';
+import linkedinicon from '../assets/img/linkedin.png';
 function App() {
-  return (
-    
-    <Box display="flex"
-    flexDir="column"
-    justifyContent="center" alignItems="center"
-    minH="870px"
-    bg="#718096"
-    >
-      <Flex
-      bg="#2A4365"
-      w="40%"
-      h="400px"
-      p="1rem"
-      flexDir="column"
-      justify="center"
-      alignItems="center"
-      border="1px solid #2D3748"
-      boxShadow="5px 10px 18px #171923"
-      borderRadius="8px">
-        <Heading as="h1" size="4xl" textAlign="center" color="#fafafa">
-          Hola!
-        </Heading>
-        <Heading as="h2" size="2xl" textAlign="center" color="#fafafa" borderBottom="1px solid #fafafa">
-          Bienvenido a mi pagina Web! 
-        </Heading>
-        <Heading as="h2" size="2xl" textAlign="center" color="#fafafa">
-          Soy Braifz 😃
-        </Heading>
-        <Image
-        boxSize="150px"
-        objectFit="cover"
-        src={Picture}
-        borderRadius="20px"
-        alt="braifz"
-        />
+  const English = {
+    greeting: ' Welcome! :D',
+    aboutme: 'Im Braian, Front-End dev Jr.',
+    ilive: 'I live in Buenos Aires, Argentina',
+    ilike: 'I like the cats, drink coffee and doing acrobatics',
+    techs: 'Techs what i use are Html, Css , Javascript , React and Git ',
+    button: '🇦🇷 ',
+  };
 
-      </Flex>
-    </Box>
+  return (
+    <>
+      <Header />
+      <main className='container'>
+        <div className='bg'></div>
+        <div className='bg bg2'></div>
+        <div className='bg bg3'></div>
+        <p className='greeting'> {English.greeting}</p>
+        <div class='picture-container'>
+          <img className='picture-me' src={PictureMe} alt='me ' />
+        </div>
+        <div className='text-container'>
+          <p className='text--style'>{English.aboutme}</p>
+          <p className='text--style'>{English.ilive}</p>
+          <p className='text--style'>{English.ilike}</p>
+          <p className='text--style'>{English.techs}</p>
+        </div>
+        <div className='buttom-links'>
+          <div className='github-icon'>
+            <a href='https://github.com/Braifz'>
+              <img src={githubicon} alt='github' />
+            </a>
+          </div>
+          <div className='linkedin-icon'>
+            <a href='https://www.linkedin.com/in/braian-fernandez-ba90291a8/'>
+              <img src={linkedinicon} alt='linkedin' />
+            </a>
+          </div>
+        </div>
+      </main>
+    </>
   );
 }
 
