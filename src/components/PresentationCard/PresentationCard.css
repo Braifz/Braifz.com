@@ -42,10 +42,10 @@
 .picture-me {
   display: none;
   align-items: flex-start;
-  width: 200px;
+  width: 350px;
   height: 100%;
   object-fit: fill;
-  filter: grayscale(0.9) contrast(1.2) opacity(0.96) saturate(1.2);
+  /* filter: grayscale(0.9) contrast(1.2) opacity(0.96) saturate(1.2); */
 }
 .text-container {
   display: block;
