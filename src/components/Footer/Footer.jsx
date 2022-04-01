@@ -1,30 +1,29 @@
 import React from 'react';
 
-import './Footer.css'
+import './Footer.css';
 
 function Footer() {
   return (
-    <footer className='footer-container'>
-      <div className='col col-1'>
-        <h1 className='text'>footer</h1>
-        <h1 className='text'>header</h1>
-        <h1 className='text'>header</h1>
-        <h1 className='text'>header</h1>
-      </div>
-      <div className='col col-2'>
-        <h1 className='text'>footer</h1>
-        <h1 className='text'>header</h1>
-        <h1 className='text'>header</h1>
-        <h1 className='text'>header</h1>
-      </div>
-      <div className='col col-3'>
-        <h1 className='text'>footer</h1>
-        <h1 className='text'>header</h1>
-        <h1 className='text'>header</h1>
-        <h1 className='text'>header</h1>
-      </div>
+    <footer>
+      <ul className='footer-container'>
+        <li className='col col-1'>
+          <a href='http://www.braifz.com'>
+            <h1>Braifz.com</h1>
+          </a>
+        </li>
+        <li className='col col-2'>
+          <a href='https://www.linkedin.com/in/braian-f-ba90291a8/'>
+            <h1>linkedin</h1>
+          </a>
+        </li>
+        <li className='col col-3'>
+          <a href='https://github.com/Braifz'>
+            <h1>Github</h1>
+          </a>
+        </li>
+      </ul>
     </footer>
-  )
+  );
 }
 
 export default Footer;
