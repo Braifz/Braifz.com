@@ -1,0 +1,41 @@
+.stack-container {
+  width: 90%;
+  margin: 32px;
+  height: 50vh;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+  animation-duration: 0.01s;
+  animation-name: borderloop;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.stack-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  color: white;
+  font-size: 3rem;
+  padding: 32px;
+  margin: 40px;
+  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+  animation-duration: 0.01s;
+  animation-name: borderloop;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.stack-container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 32px;
+}
