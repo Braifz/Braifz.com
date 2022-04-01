@@ -1,0 +1,22 @@
+.contact-container {
+  width: 90%;
+  margin: 32px;
+  height: 50vh;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+  animation-duration: 0.01s;
+  animation-name: borderloop;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+.text-contact {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}

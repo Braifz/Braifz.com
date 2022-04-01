@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 32px;
+  padding: 32px;
+  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+  animation-duration: 0.01s;
+  animation-name: borderloop;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes borderloop {
+  from {
+    box-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    box-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+.container-title {
+  width: 100%;
+  display: flex;
+}
+
+.title {
+  text-align: start;
+  font-size: 3rem;
+  width: 100%;
+  padding: 16px 0;
+  margin: 16px 0;
+}
+
+.subtitle {
+  font-size: 1.7rem;
+  padding: 16px 0;
+}
+
+.picture-me {
+  display: none;
+  align-items: flex-start;
+  width: 200px;
+  height: 100%;
+  object-fit: fill;
+  filter: grayscale(0.9) contrast(1.2) opacity(0.96) saturate(1.2);
+}
+.text-container {
+  display: block;
+  margin: 16px;
+}
+
+.text--style {
+  margin: 10px 0;
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .picture-me {
+    display: flex;
+  }
+}
+@media (min-width: 500px) {
+}

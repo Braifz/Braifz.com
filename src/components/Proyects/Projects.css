@@ -1,0 +1,21 @@
+.proyects-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 32px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+  animation-duration: 0.01s;
+  animation-name: borderloop;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+.text-proyects {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
