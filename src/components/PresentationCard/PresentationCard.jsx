@@ -10,7 +10,7 @@ const PresentationCard = () => {
           <img className='picture-me' src={PictureMe} alt='img' />
         </div>
         <div className='text-container'>
-          <h1 className='title'>Hola! Soy Braian :D </h1>
+          <h1 className='title'>Hola! Soy Braian</h1>
           <h3 className='subtitle'>Un poco sobre mi...</h3>
           <p className='text--style'>{otherDataPresentation}</p>
         </div>

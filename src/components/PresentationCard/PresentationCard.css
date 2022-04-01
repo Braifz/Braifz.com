@@ -45,6 +45,11 @@
   width: 350px;
   height: 100%;
   object-fit: fill;
+  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+  animation-duration: 0.01s;
+  animation-name: borderloop;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   /* filter: grayscale(0.9) contrast(1.2) opacity(0.96) saturate(1.2); */
 }
 .text-container {
@@ -63,6 +68,9 @@
 @media (min-width: 1024px) {
   .picture-me {
     display: flex;
+  }
+  .text-container{
+    margin:32px;
   }
 }
 @media (min-width: 500px) {
