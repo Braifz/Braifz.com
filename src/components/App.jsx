@@ -9,9 +9,9 @@ function App() {
   return (
     <Layout>
       <PresentationCard />
+      <MyStack />
       <Projects />
       <Contact />
-      <MyStack />
     </Layout>
   );
 }
