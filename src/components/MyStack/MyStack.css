@@ -2,17 +2,10 @@
   width: 90%;
   margin: 32px;
   height: 50vh;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
-  animation-duration: 0.01s;
-  animation-name: borderloop;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 .stack-text {
@@ -21,11 +14,14 @@
   justify-content: center;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  color: white;
+  border-radius: 32px;
+  background: #0a9ff5;
+  background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
+  color: rgb(17, 0, 13);
   font-size: 3rem;
   padding: 32px;
-  margin: 40px;
-  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+  margin: 10px;
+  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #0a9ff5;
   animation-duration: 0.01s;
   animation-name: borderloop;
   animation-iteration-count: infinite;
@@ -34,6 +30,8 @@
 
 .stack-container ul li {
   display: flex;
+  color: white;
+  font-size: 1.6rem;
   align-items: center;
   justify-content: center;
   text-align: center;

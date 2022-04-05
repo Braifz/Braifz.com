@@ -9,7 +9,6 @@ const NewFace = () => {
         <li>javascript</li>
         <li>Redux</li>
         <li>GIT</li>
-        <li>Web3.js</li>
         <li>node js</li>
       </ul>
     </div>
