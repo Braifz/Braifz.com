@@ -7,13 +7,11 @@
   position: relative;
   top: 0;
   height: auto;
-  color: white;
+  color: rgb(2, 30, 31);
   padding: 32px;
-  /* box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
-  animation-duration: 0.01s;
-  animation-name: borderloop;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; */
+  background: -webkit-linear-gradient(#0a9ff5, rgb(223, 31, 223));
+  border-top: 10px solid #ea36af;
+  box-shadow: 1px 1px 1px #0a9ff5;
 }
 
 .col {
@@ -30,9 +28,12 @@
 }
 
 .col a:hover {
-  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+  background: #111;
+  color: rgb(220, 236, 235);
+  box-shadow: 1rem 1rem 1rem #cf0da5, 1rem 1rem 1rem #0a9ff5;
   animation-duration: 0.01s;
   animation-name: borderloop;
+  border-radius: 32px;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
