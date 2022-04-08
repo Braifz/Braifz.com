@@ -1,16 +1,10 @@
-const dataProjectCard = {
-    title: 'Braifz.com',
-    stack: 'React js, Framer motion, CSS3, Formik',
-    github: 'www.github.com',
-    deploy: 'braifz.com'
-} 
-
+import './ProjectCard.css'
 
 const ProjectCard = ({data}) => {
     return(
         <div className="card-container">
             <div className="title-container">
-                <h1 className="title">{data.title}</h1>
+                <h1>{data.title}</h1>
             </div>
             <div className="stack-container">
                 <p className="stack">{data.stack}</p>
