@@ -8,7 +8,7 @@ const ProjectCard = ({data}) => {
             </div>
             <div className="stack-container">
                 <p className="stack">{data.stack}</p>
-                <img src="https://placekitten.com/200/300" alt="kitty-img" />
+                <img src="https://placekitten.com/200/200" alt="kitty-img" />
             </div>
             <ul className="links-container">
                 <li><a href={data.github}>Github</a></li>
