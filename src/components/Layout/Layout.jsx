@@ -12,7 +12,6 @@ const variants = {
 const Layout = ({ children }) => {
   return (
     <motion.div initial='hidden' animate='visible' variants={variants}>
-      <Header />
       <div className='children-container'>{children}</div>
       <Footer />
     </motion.div>
