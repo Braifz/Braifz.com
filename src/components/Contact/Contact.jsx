@@ -29,40 +29,43 @@ const validate = Yup.object().shape({
 const onSubmitForm = (values) => {
   emailjs.send(process.env.REACT_APP_FORMIK_SERVICE_ID, process.env.REACT_APP_FORMIK_TEMPLATE_ID,values,process.env.REACT_APP_FORMIK_PUBLIC_KEY)
   .then((result) => {
-    console.log(result.text)
+    // console.log(result.text)
+    alert('Mensaje enviado con éxito. ¡Me pondré en contacto en la brevedad!')
   })
   .catch((e) => {
-    console.log(e)
+    // console.log(e)
+    alert('Sucedió un error al enviar el mensaje. ¡Intente más tarde!')
   })
 }
 
 const Contact = () => {
   return (
     <div className='contact-container'>
-      <h1 className='text-contact'>Contacto</h1>
+      <h1 className='text-contact'>Contact</h1>
       <Formik initialValues={initialValues}
       validationSchema={validate}
       onSubmit={onSubmitForm}
+      className='form-container'
       >
         {({ errors, touched }) => (
         <Form>
-          <label htmlFor="name">Name</label>
-          <Field name="name" placeholder="name"/>
+          <label className='label-text' htmlFor="name">Name</label>
+          <Field className='input' name="name" placeholder="name"/>
           {errors.name && touched.name ? (
-          <div>{errors.name}</div>
+          <div className='error-message-form'>{errors.name}</div>
           ) : null}
-          <label htmlFor="subject">Subject</label>
-          <Field name="subject" placeholder="subject"/>
+          <label className='label-text' htmlFor="subject">Subject</label>
+          <Field className='input' name="subject" placeholder="subject"/>
           {errors.subject && touched.subject ? (
-            <div>{errors.subject}</div>
+            <div className='error-message-form'>{errors.subject}</div>
           ) : null}
-          <label htmlFor="email">Email</label>
-          <Field name="email" type="email" placeholder="email"/>
-          {errors.email && touched.email ? <div>{errors.email}</div> : null}
-          <label htmlFor="message">Message</label>
-          <Field name="message" as="textarea" placeholder="message"></Field>
+          <label className='label-text' htmlFor="email">Email</label>
+          <Field className='input' name="email" type="email" placeholder="email"/>
+          {errors.email && touched.email ? <div className='error-message-form'>{errors.email}</div> : null}
+          <label  className='label-text' htmlFor="message">Message</label>
+          <Field  className='message-input' name="message" as="textarea" placeholder="message"></Field>
           {errors.message && touched.message ? <div>{errors.message}</div> : null}
-          <button type="submit">Submit</button>
+          <button className='submit-button' type="submit">Submit</button>
         </Form>
       )}
       </Formik>
