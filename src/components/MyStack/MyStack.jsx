@@ -6,10 +6,10 @@ const NewFace = () => {
       <h1 className='stack-text'>Skills</h1>
       <ul>
         <li>React js</li>
-        <li>javascript</li>
+        <li>Javascript</li>
         <li>Redux</li>
-        <li>GIT</li>
-        <li>node js</li>
+        <li>Git</li>
+        <li>Node js</li>
       </ul>
     </div>
   );
