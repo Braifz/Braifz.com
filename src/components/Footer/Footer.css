@@ -6,12 +6,11 @@
   justify-content: center;
   position: relative;
   top: 0;
+  margin-top: 32px;
   height: auto;
   color: rgb(2, 30, 31);
   padding: 32px;
   background: -webkit-linear-gradient(#0a9ff5, rgb(223, 31, 223));
-  border-top: 10px solid #ea36af;
-  box-shadow: 1px 1px 1px #0a9ff5;
 }
 
 .col {
@@ -30,12 +29,7 @@
 .col a:hover {
   background: #111;
   color: rgb(220, 236, 235);
-  box-shadow: 1rem 1rem 1rem #cf0da5, 1rem 1rem 1rem #0a9ff5;
-  animation-duration: 0.01s;
-  animation-name: borderloop;
   border-radius: 32px;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 .text {
