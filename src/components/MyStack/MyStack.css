@@ -1,5 +1,5 @@
 .stack-container {
-  width: 90%;
+  width: 100%;
   margin: 32px;
   height: 50vh;
   display: flex;
@@ -15,25 +15,20 @@
   writing-mode: vertical-lr;
   text-orientation: upright;
   border-radius: 32px;
-  background: #0a9ff5;
   background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
   color: rgb(17, 0, 13);
-  font-size: 3rem;
+  font-size: 4rem;
   padding: 32px;
   margin: 10px;
-  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #0a9ff5;
-  animation-duration: 0.01s;
-  animation-name: borderloop;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 .stack-container ul li {
   display: flex;
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 32px;
+  padding: 8px;
 }
