@@ -15,25 +15,20 @@
 
 .title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   width: 100%;
   padding: 32px;
   box-shadow: 2rem 2rem 2rem #001414, 2rem 2rem 2rem #140114;
-  background: #0a9ff5;
   background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
   color: rgb(17, 1, 13);
   border-radius: 32px;
-  animation-duration: 0.01s;
-  animation-name: borderloop;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  padding: 16px 0;
+  padding: 16px;
   margin: 16px 0;
 }
 
 .subtitle {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 3rem;
   padding: 16px 0;
 }
 
@@ -48,29 +43,30 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 2rem 2rem 1rem #cf0da5, 2rem 2rem 2rem #0a9ff5;
-  animation-duration: 1s;
-  animation-name: borderloop;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  filter: grayscale(0.8);
 }
 
 .text-container {
   display: block;
-  margin: 16px;
+  margin: 16px 0px;
 }
 
 .text--style {
   text-align: start;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 100;
+  margin: 16px 0;
   color: white;
+  border: 3px solid white;
+  padding: 16px;
+  border-radius: 32px;
 }
 
 @media (min-width: 1024px) {
   .text-container {
     margin: 32px;
   }
-}
-@media (min-width: 500px) {
+  .text--style {
+    padding: 32px;
+  }
 }
