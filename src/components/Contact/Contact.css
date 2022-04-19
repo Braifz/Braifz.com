@@ -2,11 +2,6 @@
   width: 90%;
   margin: 32px;
   display: grid;
-  /* box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
-  animation-duration: 0.01s;
-  animation-name: borderloop;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; */
 }
 
 .text-contact {
@@ -16,30 +11,25 @@
   border-radius: 32px;
   background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
   color: rgb(17, 0, 13);
-  font-size: 3rem;
-  padding: 32px;
+  font-size: 5rem;
+  padding: 8px;
   margin: 20px;
-  box-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #0a9ff5;
-  animation-duration: 0.01s;
-  animation-name: borderloop;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
-.form-container{
+.form-container {
   display: flex;
   margin: 10px;
   flex-direction: column;
 }
 
-.input{
+.input {
   width: 100%;
   padding: 20px;
   border-radius: 16px;
   font-size: 2rem;
 }
 
-.message-input{
+.message-input {
   width: 100%;
   height: 250px;
   border-radius: 16px;
@@ -47,50 +37,47 @@
   font-size: 2rem;
 }
 
-.label-text{
+.label-text {
   display: block;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-.error-message-form{
+.error-message-form {
   padding: 10px;
+  font-size: 1.3rem;
+  color: red;
 }
 
-.submit-button{
-  font-family: 'Nintendoid1';
+.submit-button {
   display: block;
   background: #111;
   color: rgb(220, 236, 235);
-  box-shadow: 1rem 1rem 1rem #cf0da5, 1rem 1rem 1rem #0a9ff5;
-  animation-duration: 0.01s;
-  animation-name: borderloop;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  width:100%;
+  width: 100%;
   margin-top: 20px;
   height: 50px;
   border-radius: 16px;
   font-size: 2.5rem;
   font-weight: bold;
   cursor: pointer;
+  border: 3px solid white;
 }
 
-.submit-button:hover{
+.submit-button:hover {
   background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
   color: rgb(17, 0, 13);
+  border: none;
 }
 
-@media (min-width:800px) {
-  .contact-container{
+@media (min-width: 800px) {
+  .contact-container {
     grid-template-columns: 30% 70%;
   }
-  
-  .text-contact{
+
+  .text-contact {
     font-size: 5rem;
     writing-mode: vertical-lr;
     text-orientation: upright;
-    width:150px;
+    width: 150px;
   }
-
 }
