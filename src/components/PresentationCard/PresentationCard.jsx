@@ -8,7 +8,7 @@ const PresentationCard = () => {
   return (
     <main className='container'>
       <div className='container-title'>
-        <div className='picture-container'>
+        {/* <div className='picture-container'>
           <motion.img
             animate={{
               borderRadius: ['0%', '30%', '50%'],
@@ -24,7 +24,7 @@ const PresentationCard = () => {
             src={PictureMe}
             alt='img'
           />
-        </div>
+        </div> */}
       </div>
       <div className='text-container'>
         <h1 className='title'>Hello!👋 I'm Braian </h1>
