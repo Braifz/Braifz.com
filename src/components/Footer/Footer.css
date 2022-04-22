@@ -10,7 +10,7 @@
   height: auto;
   color: rgb(2, 30, 31);
   padding: 32px;
-  background: -webkit-linear-gradient(#0a9ff5, rgb(223, 31, 223));
+  background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
 }
 
 .col {
@@ -29,6 +29,7 @@
 .col a:hover {
   background: #111;
   color: rgb(220, 236, 235);
+  border: 2px solid white;
   border-radius: 32px;
 }
 
