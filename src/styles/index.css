@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: 2em;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
+  border-radius: 100vw;
+  border: 3px solid #111;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,7 +22,7 @@
 html {
   font-size: 62.5%;
   background: #111;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   color: #eee;
   line-height: 1.5;
   letter-spacing: 0.125em;
