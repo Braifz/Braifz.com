@@ -10,7 +10,7 @@
   height: auto;
   color: rgb(2, 30, 31);
   padding: 32px;
-  background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
+  background: var(--main-bg-color);
 }
 
 .col {

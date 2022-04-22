@@ -15,7 +15,7 @@
   writing-mode: vertical-lr;
   text-orientation: upright;
   border-radius: 32px;
-  background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
+  background: var(--main-bg-color);
   color: rgb(17, 0, 13);
   font-size: 4rem;
   padding: 32px;
