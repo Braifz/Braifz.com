@@ -10,8 +10,8 @@ function App() {
     <Layout>
       <PresentationCard />
       <MyStack />
-      <Contact />
       <Projects />
+      <Contact />
     </Layout>
   );
 }
