@@ -19,7 +19,7 @@
   width: 100%;
   padding: 32px;
   box-shadow: 2rem 2rem 2rem #001414, 2rem 2rem 2rem #140114;
-  background: linear-gradient(90deg, #0a9ff5 0%, rgba(255, 1, 160, 1) 100%);
+  background: var(--main-bg-color);
   color: rgb(17, 1, 13);
   border-radius: 32px;
   padding: 16px;
