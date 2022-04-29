@@ -6,7 +6,7 @@
   justify-content: center;
   position: relative;
   top: 0;
-  margin-top: 32px;
+  margin-top: 16px;
   height: auto;
   color: rgb(2, 30, 31);
   padding: 32px;
@@ -21,20 +21,28 @@
   padding: 16px;
 }
 .col a {
+  display: flex;
   padding: 16px;
   text-decoration: inherit;
   color: inherit;
 }
 
 .col a:hover {
-  background: #111;
-  color: rgb(220, 236, 235);
-  border: 2px solid white;
+  filter: invert(1);
+  background: white;
   border-radius: 32px;
+}
+.col img {
+  padding-right: 16px;
+  width: 50px;
 }
 
 .text {
   font-size: 1.3rem;
+}
+
+.rights-reserved {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
