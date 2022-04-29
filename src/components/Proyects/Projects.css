@@ -12,9 +12,15 @@
   animation-direction: alternate; */
 }
 
-.text-proyects {
-  color: white;
+.text-projects {
   text-align: center;
   font-size: 4rem;
-  margin: 32px;
+  text-align: center;
+  font-size: 5rem;
+  width: 100%;
+  background: var(--main-bg-color);
+  color: rgb(17, 1, 13);
+  border-radius: 32px;
+  padding: 16px;
+  margin: 16px 0;
 }

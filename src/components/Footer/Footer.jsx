@@ -1,27 +1,39 @@
-import React from 'react';
+import React from "react";
 
-import './Footer.css';
+import githubIMG from "../../assets/img/github.svg";
+import linkedinIMG from "../../assets/img/linkedin.svg";
+import instagramIMG from "../../assets/img/instagram.svg";
+import "./Footer.css";
 
 function Footer() {
   return (
     <footer>
-      <ul className='footer-container'>
-        <li className='col col-1'>
-          <a href='https://github.com/Braifz'>
+      <ul className="footer-container">
+        <li className="col col-1">
+          <a href="https://github.com/Braifz">
+            <img src={githubIMG} alt="" />
             <h1>Github</h1>
           </a>
         </li>
-        <li className='col col-2'>
-          <a href='https://www.linkedin.com/in/braian-f-ba90291a8/'>
+        <li className="col col-2">
+          <a href="https://www.linkedin.com/in/braian-f-ba90291a8/">
+            <img src={linkedinIMG} alt="" />
             <h1>Linkedin</h1>
           </a>
         </li>
-        <li className='col col-3'>
-          <a href='https://www.instagram.com/braifz/'>
+        <li className="col col-3">
+          <a href="https://www.instagram.com/braifz/">
+            <img src={instagramIMG} alt="" />
             <h1>Instagram</h1>
           </a>
         </li>
       </ul>
+      <div className="rights-reserved">
+        <p>
+          &copy;{new Date().getFullYear()} Braifz | All rights reserved | Terms
+          Of Service | Privacy
+        </p>
+      </div>
     </footer>
   );
 }
