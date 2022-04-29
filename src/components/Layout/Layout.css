@@ -1,16 +1,16 @@
 .children-container {
+  width: 100%;
   display: flex;
-  margin-top: 40px;
+  margin-top: 16px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .children-container {
-    margin: 80px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
   }
 }
