@@ -14,11 +14,7 @@
 }
 
 :root {
-  --main-bg-color: linear-gradient(
-    90deg,
-    #0a9ff5 0%,
-    rgba(255, 1, 160, 1) 100%
-  );
+  --main-bg-color: linear-gradient(90deg, #15b62a 0%, rgb(47, 163, 179) 100%);
 }
 /* 
 linear-gradient(
