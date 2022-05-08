@@ -2,7 +2,7 @@
 
 
 ```
-  git clone git@github.com:Braifz/Braifz.com.git
+  git clone https://github.com/Braifz/Braifz.com.git
 ```
 ```
   cd Braifz.com
