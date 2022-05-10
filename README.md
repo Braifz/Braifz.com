@@ -14,5 +14,5 @@
   npm start
 ```
 
-Created with the Create React app and Chakra UI
+Created with the Create React app
 
