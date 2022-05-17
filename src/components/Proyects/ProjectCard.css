@@ -2,7 +2,7 @@
   margin: 32px;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 400px;
   height: 500px;
   border-radius: 16px;
   background-color: rgb(19, 18, 18);
@@ -39,10 +39,15 @@
 
 .card-stack-container {
   display: flex;
+  align-items: center;
+  justify-content: start;
   flex-direction: row;
 }
 
 .card-stack-item {
+  display: flex;
+  text-align: center;
+  align-items: center;
   list-style-type: none;
   padding: 8px;
   margin: 0px 0px 0px 16px;
