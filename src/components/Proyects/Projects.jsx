@@ -7,7 +7,9 @@ const Proyects = () => {
     <div className="my-works-container">
       <h1 className="text-projects">My works</h1>
       <div className="projects-container">
-        <ProjectCard className="project-card" data={dataProjectCard} />
+        {dataProjectCard.map((project) => (
+          <ProjectCard data={project} key={project.title} />
+        ))}
       </div>
     </div>
   );

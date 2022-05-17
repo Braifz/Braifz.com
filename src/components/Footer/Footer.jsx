@@ -10,19 +10,31 @@ function Footer() {
     <footer>
       <ul className="footer-container">
         <li className="col col-1">
-          <a href="https://github.com/Braifz">
+          <a
+            href="https://github.com/Braifz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={githubIMG} alt="" />
             <h1>Github</h1>
           </a>
         </li>
         <li className="col col-2">
-          <a href="https://www.linkedin.com/in/braian-f-ba90291a8/">
+          <a
+            href="https://www.linkedin.com/in/braian-f-ba90291a8/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedinIMG} alt="" />
             <h1>Linkedin</h1>
           </a>
         </li>
         <li className="col col-3">
-          <a href="https://www.instagram.com/braifz/">
+          <a
+            href="https://www.instagram.com/braifz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={instagramIMG} alt="" />
             <h1>Instagram</h1>
           </a>
