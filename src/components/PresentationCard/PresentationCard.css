@@ -3,9 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 128px;
-  max-width: 1200px;
-  padding: 40px;
+  max-width: 800px;
 }
 
 .container-title {
@@ -56,15 +54,13 @@
   font-weight: 100;
   margin: 16px 0;
   color: white;
+  background-color: #222;
   border: 3px solid white;
   padding: 16px;
   border-radius: 32px;
 }
 
 @media (min-width: 1024px) {
-  .text-container {
-    margin: 32px;
-  }
   .text--style {
     padding: 32px;
   }
