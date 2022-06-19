@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 2em;
+  width: 1em;
 }
 
 ::-webkit-scrollbar-track {
@@ -10,11 +10,16 @@
 ::-webkit-scrollbar-thumb {
   background: var(--main-bg-color);
   border-radius: 100vw;
-  border: 3px solid #111;
 }
 
+/* #15b62a  rgb(47, 163, 179) */
+
 :root {
-  --main-bg-color: linear-gradient(90deg, #15b62a 0%, rgb(47, 163, 179) 100%);
+  --main-bg-color: linear-gradient(
+    90deg,
+    #24881b9f 0%,
+    rgba(65, 236, 108, 0.952) 100%
+  );
 }
 /* 
 linear-gradient(
