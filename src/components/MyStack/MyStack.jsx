@@ -1,9 +1,9 @@
-import './MyStack.css';
+import "./MyStack.css";
 
-const NewFace = () => {
+const MyStack = () => {
   return (
-    <div className='stack-container'>
-      <h1 className='stack-text'>Skills</h1>
+    <div className="stack-container">
+      <h1 className="stack-text">Skills</h1>
       <ul>
         <li>React js</li>
         <li>Javascript</li>
@@ -15,4 +15,4 @@ const NewFace = () => {
   );
 };
 
-export default NewFace;
+export default MyStack;
