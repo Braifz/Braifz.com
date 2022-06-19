@@ -1,8 +1,8 @@
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import { motion } from 'framer-motion/dist/es/index';
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import { motion } from "framer-motion/dist/es/index";
 
-import './Layout.css';
+import "./Layout.css";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -11,8 +11,10 @@ const variants = {
 
 const Layout = ({ children }) => {
   return (
-    <motion.div initial='hidden' animate='visible' variants={variants}>
-      <div className='children-container'>{children}</div>
+    <motion.div initial="hidden" animate="visible" variants={variants}>
+      <div className="wrapper-container">
+        <div className="children-container">{children}</div>
+      </div>
       <Footer />
     </motion.div>
   );

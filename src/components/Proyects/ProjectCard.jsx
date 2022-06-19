@@ -3,7 +3,7 @@ import "./ProjectCard.css";
 const ProjectCard = ({ data }) => {
   return (
     <div className="card-container">
-      <img src={data.image} alt="proyect-img" />
+      {/* <img src={data.image} alt="proyect-img" /> */}
       <h2 className="card-title">{data.title}</h2>
       <p>{data.description}</p>
       <h3>Techs</h3>
