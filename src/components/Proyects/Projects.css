@@ -28,7 +28,7 @@
   margin-bottom: 32px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .projects-container {
     flex-direction: row;
   }
