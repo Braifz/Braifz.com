@@ -18,4 +18,12 @@ export const dataProjectCard = [
     github: "https://github.com/Braifz/todo-app",
     deploy: "https://todo-app-sigma-virid.vercel.app/",
   },
+  {
+    title: "Search Image",
+    image: todoApp,
+    stack: ["React js", "Css3", "Formik", "Unsplash API"],
+    description: "Search image with unsplash api",
+    github: "https://github.com/Braifz/search-image",
+    deploy: "https://search-image-unsplash.vercel.app/",
+  },
 ];
