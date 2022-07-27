@@ -1,10 +1,18 @@
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
   return (
-    <header className='header-container'>
-      <div>
-        <h1>FRONTEND DEVELOPER</h1>
+    <header className="header-container">
+      <h1 className="logo">Braifz</h1>
+      <div className="blog-btn">
+        <a
+          className="link"
+          href="https://braifz.hashnode.dev/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Blog
+        </a>
       </div>
     </header>
   );
