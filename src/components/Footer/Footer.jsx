@@ -41,10 +41,7 @@ function Footer() {
         </li>
       </ul>
       <div className="rights-reserved">
-        <p>
-          &copy;{new Date().getFullYear()} Braifz | All rights reserved | Terms
-          Of Service | Privacy
-        </p>
+        <p>&copy;{new Date().getFullYear()} Braifz</p>
       </div>
     </footer>
   );
