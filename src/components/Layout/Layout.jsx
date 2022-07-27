@@ -12,6 +12,7 @@ const variants = {
 const Layout = ({ children }) => {
   return (
     <motion.div initial="hidden" animate="visible" variants={variants}>
+      <Header />
       <div className="wrapper-container">
         <div className="children-container">{children}</div>
       </div>
