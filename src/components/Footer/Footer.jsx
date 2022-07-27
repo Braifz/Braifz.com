@@ -16,7 +16,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <img src={githubIMG} alt="" />
-            <h1>Github</h1>
+            <h1 className="text">Github</h1>
           </a>
         </li>
         <li className="col col-2">
@@ -26,7 +26,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <img src={linkedinIMG} alt="" />
-            <h1>Linkedin</h1>
+            <h1 className="text">Linkedin</h1>
           </a>
         </li>
         <li className="col col-3">
@@ -36,15 +36,12 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <img src={instagramIMG} alt="" />
-            <h1>Instagram</h1>
+            <h1 className="text">Instagram</h1>
           </a>
         </li>
       </ul>
       <div className="rights-reserved">
-        <p>
-          &copy;{new Date().getFullYear()} Braifz | All rights reserved | Terms
-          Of Service | Privacy
-        </p>
+        <p>&copy;{new Date().getFullYear()} Braifz</p>
       </div>
     </footer>
   );

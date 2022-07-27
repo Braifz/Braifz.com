@@ -1,6 +1,7 @@
 .stack-container {
   width: 100%;
   margin: 32px;
+  min-height: 100vh;
   height: 50vh;
   display: flex;
   flex-direction: row;
