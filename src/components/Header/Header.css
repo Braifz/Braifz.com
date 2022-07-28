@@ -10,6 +10,10 @@
   font-size: 3rem;
 }
 
+.logo:hover {
+  filter: drop-shadow(0em 0em 2em #fff);
+}
+
 .link {
   padding: 15px;
   border-radius: 50%;
