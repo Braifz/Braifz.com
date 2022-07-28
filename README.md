@@ -1,4 +1,4 @@
-<h1>Braifz portfolio</h1>
+<h1>My personal portfolio</h1>
 
 
 ```
