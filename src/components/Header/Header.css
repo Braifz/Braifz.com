@@ -16,6 +16,8 @@
   border: 3px solid white;
   font-size: 2rem;
   transition: all 0.3s;
+  text-decoration: inherit;
+  color: #fff;
 }
 
 .link:hover {
@@ -25,14 +27,8 @@
   background: var(--main-bg-color);
 }
 
-.link:link {
-  text-decoration: inherit;
-  color: inherit;
-}
-
 .link:visited {
   text-decoration: inherit;
-  color: inherit;
 }
 
 @media (min-width: 800px) {
