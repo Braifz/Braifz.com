@@ -11,7 +11,7 @@ function App() {
       <PresentationCard />
       <MyStack />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </Layout>
   );
 }
