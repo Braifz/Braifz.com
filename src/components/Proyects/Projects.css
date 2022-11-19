@@ -9,7 +9,7 @@
 
 .projects-container {
   width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -31,6 +31,8 @@
 
 @media (min-width: 1200px) {
   .projects-container {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 16px;
+    width: 1200px;
   }
 }
