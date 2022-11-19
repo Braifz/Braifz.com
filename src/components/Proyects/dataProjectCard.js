@@ -11,6 +11,31 @@ export const dataProjectCard = [
     deploy: "https://www.braifz.com/",
   },
   {
+    title: "Rick and morty App",
+    image: todoApp,
+    stack: ["Next.js", "Tailwind", "Context", "Axios", "Three js"],
+    description:
+      "Rick and morty app where u can find your favorite character from the serie",
+    github: "https://github.com/Braifz/Rick-and-Morty-nextJS",
+    deploy: "https://github.com/Braifz/Rick-and-Morty-nextJS",
+  },
+  {
+    title: "Somos mas ONG (Alkemy)",
+    image: todoApp,
+    stack: ["React js", "Css3", "Redux", "Axios", "Formik"],
+    description: "application of an NGO where I work with 4 more people",
+    github: "https://github.com/Braifz/Somos-mas-ONG",
+    deploy: "https://github.com/Braifz/Somos-mas-ONG",
+  },
+  {
+    title: "Lens protocol App",
+    image: todoApp,
+    stack: ["Next.js", "ethers", "Graphql", "urql", "Lens protocol"],
+    description: "Lens protocol App ",
+    github: "https://github.com/Braifz/lens-protocol-example",
+    deploy: "https://github.com/Braifz/lens-protocol-example",
+  },
+  {
     title: "To-Do List App",
     image: todoApp,
     stack: ["React js", "styled-components", "Context", "Formik"],
